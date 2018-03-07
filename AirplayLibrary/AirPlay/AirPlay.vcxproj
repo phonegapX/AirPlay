@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D494C2B3-28AB-40A7-A1A4-2CAC4FD1FDFF}</ProjectGuid>
+    <RootNamespace>AirPlay</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\AirplaySdkExample\Debug</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>MYCRYPT_EXPORTS;DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\lib\fdkaac\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mycrypt.lib;libfdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\aac_eld\aac_eld.c" />
+    <ClCompile Include="lib\airplay.c" />
+    <ClCompile Include="lib\alac\alac.c" />
+    <ClCompile Include="lib\audio.c" />
+    <ClCompile Include="lib\digest.c" />
+    <ClCompile Include="lib\dnssd.c" />
+    <ClCompile Include="lib\fairplay.c" />
+    <ClCompile Include="lib\httpd.c" />
+    <ClCompile Include="lib\http_parser.c" />
+    <ClCompile Include="lib\http_request.c" />
+    <ClCompile Include="lib\http_response.c" />
+    <ClCompile Include="lib\logger.c" />
+    <ClCompile Include="lib\netutils.c" />
+    <ClCompile Include="lib\plistlib.c" />
+    <ClCompile Include="lib\raop.c" />
+    <ClCompile Include="lib\raop_buffer.c" />
+    <ClCompile Include="lib\raop_rtp.c" />
+    <ClCompile Include="lib\sdp.c" />
+    <ClCompile Include="lib\utils.c" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\aac_eld\aac_eld.h" />
+    <ClInclude Include="lib\airplay.h" />
+    <ClInclude Include="lib\alac\alac.h" />
+    <ClInclude Include="lib\alac\stdint_win.h" />
+    <ClInclude Include="lib\audio.h" />
+    <ClInclude Include="lib\compat.h" />
+    <ClInclude Include="lib\digest.h" />
+    <ClInclude Include="lib\dnssd.h" />
+    <ClInclude Include="lib\dnssdint.h" />
+    <ClInclude Include="lib\fairplay.h" />
+    <ClInclude Include="lib\global.h" />
+    <ClInclude Include="lib\httpd.h" />
+    <ClInclude Include="lib\http_parser.h" />
+    <ClInclude Include="lib\http_request.h" />
+    <ClInclude Include="lib\http_response.h" />
+    <ClInclude Include="lib\logger.h" />
+    <ClInclude Include="lib\memalign.h" />
+    <ClInclude Include="lib\mycrypt.h" />
+    <ClInclude Include="lib\netutils.h" />
+    <ClInclude Include="lib\plist.h" />
+    <ClInclude Include="lib\plistlib.h" />
+    <ClInclude Include="lib\raop.h" />
+    <ClInclude Include="lib\raop_buffer.h" />
+    <ClInclude Include="lib\raop_rtp.h" />
+    <ClInclude Include="lib\sdp.h" />
+    <ClInclude Include="lib\sockets.h" />
+    <ClInclude Include="lib\threads.h" />
+    <ClInclude Include="lib\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\dnssd.m" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

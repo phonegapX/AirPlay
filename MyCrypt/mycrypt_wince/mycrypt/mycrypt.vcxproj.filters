@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\ed25519">
+      <UniqueIdentifier>{7d08c5cf-d8d8-43ee-9f44-69e259b5ca35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\crypto">
+      <UniqueIdentifier>{339be7da-9c04-42e0-abd1-ae08f3abe920}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mycrypt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\add_scalar.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\fe.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\ge.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\key_exchange.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\keypair.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\sc.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\seed.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\sha512.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\sign.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ed25519\src\verify.c">
+      <Filter>源文件\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Curve25519\curve25519-donna.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\aes.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\hmac.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\md5.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\new_aes.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\rc4.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\sha1.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\base64.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\rsakey.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\rsapem.c">
+      <Filter>源文件\crypto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mycrypt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

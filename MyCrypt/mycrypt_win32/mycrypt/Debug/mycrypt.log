@@ -1,0 +1,126 @@
+﻿生成启动时间为 2017/3/16 0:33:59。
+     1>项目“E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\mycrypt\mycrypt.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\mycrypt.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\mycrypt.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\crypto /I..\Curve25519 /I..\Ed25519\src /I.\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MYCRYPT_EXPORTS /D CONFIG_BIGINT_CRT /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Ed25519\src\add_scalar.c ..\crypto\aes.c ..\crypto\base64.c ..\crypto\bigint.c "..\Curve25519\curve25519-donna.c" ..\Ed25519\src\fe.c ..\Ed25519\src\ge.c ..\crypto\hmac.c ..\Ed25519\src\key_exchange.c ..\Ed25519\src\keypair.c ..\crypto\md5.c ..\crypto\new_aes.c ..\crypto\rc4.c ..\crypto\rsakey.c ..\crypto\rsapem.c ..\Ed25519\src\sc.c ..\Ed25519\src\seed.c ..\crypto\sha1.c ..\Ed25519\src\sha512.c ..\Ed25519\src\sign.c ..\Ed25519\src\verify.c
+         verify.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         sign.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         sha512.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\crypto\os_port.h(115): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\crypto\os_port.h(116): warning C4142: 类型的良性重定义
+         sha1.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\crypto\sha1.c(254): warning C4101: “ret”: 未引用的局部变量
+         seed.c
+         sc.c
+         rsapem.c
+         rsakey.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\mycrypt\stdint.h(162): warning C4005: “SIZE_MAX”: 宏重定义
+                 c:\program files\microsoft visual studio 10.0\vc\include\limits.h(82) : 参见“SIZE_MAX”的前一个定义
+         rc4.c
+         new_aes.c
+         md5.c
+         keypair.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         key_exchange.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         hmac.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         ge.c
+         fe.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(823): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(824): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(825): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(826): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(827): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(828): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(829): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(830): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(831): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fe.c(832): warning C4244: “=”: 从“int64_t”转换到“int32_t”，可能丢失数据
+         curve25519-donna.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\mycrypt\stdint.h(162): warning C4005: “SIZE_MAX”: 宏重定义
+                 c:\program files\microsoft visual studio 10.0\vc\include\limits.h(82) : 参见“SIZE_MAX”的前一个定义
+         bigint.c
+         base64.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\crypto\base64.c(75): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+         aes.c
+         正在生成代码...
+         正在编译...
+         add_scalar.c
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(26): warning C4142: 类型的良性重定义
+     1>e:\disk\f\works\embedded_phone\mirrorlink\source\apple\airplay\airplay\mycrypt\mycrypt_win32\ed25519\src\fixedint.h(37): warning C4142: 类型的良性重定义
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\mycrypt.dll.embed.manifest.res" Debug\mycrypt_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.dll" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mycrypt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.lib" /MACHINE:X86 /DLL Debug\mycrypt.dll.embed.manifest.res
+         Debug\add_scalar.obj
+         Debug\aes.obj
+         Debug\base64.obj
+         Debug\bigint.obj
+         "Debug\curve25519-donna.obj"
+         Debug\fe.obj
+         Debug\ge.obj
+         Debug\hmac.obj
+         Debug\key_exchange.obj
+         Debug\keypair.obj
+         Debug\md5.obj
+         Debug\new_aes.obj
+         Debug\rc4.obj
+         Debug\rsakey.obj
+         Debug\rsapem.obj
+         Debug\sc.obj
+         Debug\seed.obj
+         Debug\sha1.obj
+         Debug\sha512.obj
+         Debug\sign.obj
+         Debug\verify.obj
+            正在创建库 E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.lib 和对象 E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.exp
+       Manifest:
+         正在删除文件“Debug\mycrypt.dll.embed.manifest”。
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\mycrypt.dll.embed.manifest" /manifest Debug\mycrypt.dll.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\mycrypt.dll.embed.manifest.res" Debug\mycrypt_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.dll" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\mycrypt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.lib" /MACHINE:X86 /DLL Debug\mycrypt.dll.embed.manifest.res
+         Debug\add_scalar.obj
+         Debug\aes.obj
+         Debug\base64.obj
+         Debug\bigint.obj
+         "Debug\curve25519-donna.obj"
+         Debug\fe.obj
+         Debug\ge.obj
+         Debug\hmac.obj
+         Debug\key_exchange.obj
+         Debug\keypair.obj
+         Debug\md5.obj
+         Debug\new_aes.obj
+         Debug\rc4.obj
+         Debug\rsakey.obj
+         Debug\rsapem.obj
+         Debug\sc.obj
+         Debug\seed.obj
+         Debug\sha1.obj
+         Debug\sha512.obj
+         Debug\sign.obj
+         Debug\verify.obj
+            正在创建库 E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.lib 和对象 E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.exp
+         mycrypt.vcxproj -> E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\Debug\mycrypt.dll
+       FinalizeBuildStatus:
+         正在删除文件“Debug\mycrypt.unsuccessfulbuild”。
+         正在对“Debug\mycrypt.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\disk\F\Works\Embedded_Phone\mirrorLink\source\apple\airplay\AirPlay\MyCrypt\mycrypt_win32\mycrypt\mycrypt.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.29

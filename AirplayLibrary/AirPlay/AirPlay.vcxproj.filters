@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{6d9fbe54-f3c4-4da5-84c6-759ecf2a1fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\alac">
+      <UniqueIdentifier>{5267cc7c-d15e-491a-807b-b1bbf506691a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\aac-eld">
+      <UniqueIdentifier>{8cedbc65-569e-4c3d-a25a-ba542970604d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\digest.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dnssd.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\http_parser.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\http_request.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\http_response.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\httpd.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\logger.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\netutils.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\raop.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\raop_buffer.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\raop_rtp.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sdp.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\utils.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\alac\alac.c">
+      <Filter>lib\alac</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\plistlib.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\airplay.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\audio.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\fairplay.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\aac_eld\aac_eld.c">
+      <Filter>lib\aac-eld</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\compat.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\digest.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dnssdint.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\global.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\http_parser.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\http_request.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\http_response.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\httpd.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\logger.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\memalign.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\netutils.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\raop_buffer.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\raop_rtp.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sdp.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sockets.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\threads.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\utils.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\alac\alac.h">
+      <Filter>lib\alac</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\alac\stdint_win.h">
+      <Filter>lib\alac</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\mycrypt.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\plist.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\plistlib.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\airplay.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\audio.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dnssd.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fairplay.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\raop.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\aac_eld\aac_eld.h">
+      <Filter>lib\aac-eld</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\dnssd.m">
+      <Filter>lib</Filter>
+    </None>
+  </ItemGroup>
+</Project>

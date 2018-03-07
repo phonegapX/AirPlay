@@ -1,0 +1,984 @@
+EXPORTS
+    AACcodeBookDescriptionSCL @1 DATA
+    AACcodeBookDescriptionTable @2 DATA
+    Alphas @3 DATA
+    BitMask @4 DATA
+    ELDAnalysis480 @5 DATA
+    ELDAnalysis512 @6 DATA
+    ExponentTable @7 DATA
+    FDKSEEK_CUR @8 DATA
+    FDKSEEK_END @9 DATA
+    FDKSEEK_SET @10 DATA
+    FDK_Copy @11
+    FDK_CreateBitBuffer @12
+    FDK_DeleteBitBuffer @13
+    FDK_Feed @14
+    FDK_Fetch @15
+    FDK_InitBitBuffer @16
+    FDK_ResetBitBuffer @17
+    FDK_byteAlign @18
+    FDK_get @19
+    FDK_get32 @20
+    FDK_getBitCnt @21
+    FDK_getBwd @22
+    FDK_getFreeBits @23
+    FDK_getValidBits @24
+    FDK_pushBack @25
+    FDK_pushForward @26
+    FDK_put @27
+    FDK_putBwd @28
+    FDK_sbrDecoder_aFixNoEnvDecode @29 DATA
+    FDK_sbrDecoder_aNoIccBins @30 DATA
+    FDK_sbrDecoder_aNoIidBins @31 DATA
+    FDK_sbrDecoder_envelopeTable_15 @32 DATA
+    FDK_sbrDecoder_envelopeTable_16 @33 DATA
+    FDK_sbrDecoder_envelopeTable_8 @34 DATA
+    FDK_sbrDecoder_invTable @35 DATA
+    FDK_sbrDecoder_sbr_frame_info1_15 @36 DATA
+    FDK_sbrDecoder_sbr_frame_info1_16 @37 DATA
+    FDK_sbrDecoder_sbr_frame_info2_15 @38 DATA
+    FDK_sbrDecoder_sbr_frame_info2_16 @39 DATA
+    FDK_sbrDecoder_sbr_frame_info4_15 @40 DATA
+    FDK_sbrDecoder_sbr_frame_info4_16 @41 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvBalance10F @42 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvBalance10T @43 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvBalance11F @44 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvBalance11T @45 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvLevel10F @46 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvLevel10T @47 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvLevel11F @48 DATA
+    FDK_sbrDecoder_sbr_huffBook_EnvLevel11T @49 DATA
+    FDK_sbrDecoder_sbr_huffBook_NoiseBalance11T @50 DATA
+    FDK_sbrDecoder_sbr_huffBook_NoiseLevel11T @51 DATA
+    FDK_sbrDecoder_sbr_limGains_e @52 DATA
+    FDK_sbrDecoder_sbr_limGains_m @53 DATA
+    FDK_sbrDecoder_sbr_limiterBandsPerOctaveDiv4 @54 DATA
+    FDK_sbrDecoder_sbr_randomPhase @55 DATA
+    FDK_sbrDecoder_sbr_smoothFilter @56 DATA
+    FDK_sbrDecoder_sbr_start_freq_16 @57 DATA
+    FDK_sbrDecoder_sbr_start_freq_22 @58 DATA
+    FDK_sbrDecoder_sbr_start_freq_24 @59 DATA
+    FDK_sbrDecoder_sbr_start_freq_32 @60 DATA
+    FDK_sbrDecoder_sbr_start_freq_40 @61 DATA
+    FDK_sbrDecoder_sbr_start_freq_44 @62 DATA
+    FDK_sbrDecoder_sbr_start_freq_48 @63 DATA
+    FDK_sbrDecoder_sbr_whFactorsIndex @64 DATA
+    FDK_sbrDecoder_sbr_whFactorsTable @65 DATA
+    FDK_setBitCnt @66
+    FDK_toolsGetLibInfo @67
+    FDKaacDec_tnsCoeff3 @68 DATA
+    FDKaacDec_tnsCoeff4 @69 DATA
+    FDKaacEnc_AacInitDefaultConfig @70
+    FDKaacEnc_Close @71
+    FDKaacEnc_EncodeFrame @72
+    FDKaacEnc_GetVBRBitrate @73
+    FDKaacEnc_Initialize @74
+    FDKaacEnc_LimitBitrate @75
+    FDKaacEnc_Open @76
+    FDKaacEnc_huff_ctab1 @77 DATA
+    FDKaacEnc_huff_ctab10 @78 DATA
+    FDKaacEnc_huff_ctab11 @79 DATA
+    FDKaacEnc_huff_ctab2 @80 DATA
+    FDKaacEnc_huff_ctab3 @81 DATA
+    FDKaacEnc_huff_ctab4 @82 DATA
+    FDKaacEnc_huff_ctab5 @83 DATA
+    FDKaacEnc_huff_ctab6 @84 DATA
+    FDKaacEnc_huff_ctab7 @85 DATA
+    FDKaacEnc_huff_ctab8 @86 DATA
+    FDKaacEnc_huff_ctab9 @87 DATA
+    FDKaacEnc_huff_ctabscf @88 DATA
+    FDKaacEnc_huff_ltab11 @89 DATA
+    FDKaacEnc_huff_ltab1_2 @90 DATA
+    FDKaacEnc_huff_ltab3_4 @91 DATA
+    FDKaacEnc_huff_ltab5_6 @92 DATA
+    FDKaacEnc_huff_ltab7_8 @93 DATA
+    FDKaacEnc_huff_ltab9_10 @94 DATA
+    FDKaacEnc_huff_ltabscf @95 DATA
+    FDKaacEnc_mTab_3_4 @96 DATA
+    FDKaacEnc_mTab_4_3Elc @97 DATA
+    FDKaacEnc_quantTableE @98 DATA
+    FDKaacEnc_quantTableQ @99 DATA
+    FDKaacEnc_sideInfoTabLong @100 DATA
+    FDKaacEnc_sideInfoTabShort @101 DATA
+    FDKaacEnc_specExpMantTableCombElc @102 DATA
+    FDKaacEnc_specExpTableComb @103 DATA
+    FDKaacEnc_tnsCoeff3Borders @104 DATA
+    FDKaacEnc_tnsCoeff4Borders @105 DATA
+    FDKaacEnc_tnsEncCoeff3 @106 DATA
+    FDKaacEnc_tnsEncCoeff4 @107 DATA
+    FDKaalloc @108
+    FDKaalloc_L @109
+    FDKabs @110
+    FDKacos @111
+    FDKafree @112
+    FDKafree_L @113
+    FDKatan @114
+    FDKatan2 @115
+    FDKatof @116
+    FDKatoi @117
+    FDKatol @118
+    FDKcalloc @119
+    FDKcalloc_L @120
+    FDKceil @121
+    FDKcos @122
+    FDKexp @123
+    FDKfabs @124
+    FDKfclose @125
+    FDKfeof @126
+    FDKfflush @127
+    FDKfgets @128
+    FDKfloor @129
+    FDKfopen @130
+    FDKfprintf @131
+    FDKfread @132
+    FDKfread_EL @133
+    FDKfree @134
+    FDKfree_L @135
+    FDKfseek @136
+    FDKftell @137
+    FDKfwrite @138
+    FDKfwrite_EL @139
+    FDKgetchar @140
+    FDKlog @141
+    FDKmalloc @142
+    FDKmemclear @143
+    FDKmemcmp @144
+    FDKmemcpy @145
+    FDKmemmove @146
+    FDKmemset @147
+    FDKpow @148
+    FDKprintDisclaimer @149
+    FDKprintf @150
+    FDKprintfErr @151
+    FDKrewind @152
+    FDKsbrEnc_EncodeIcc @153
+    FDKsbrEnc_EncodeIid @154
+    FDKsbrEnc_EncodeIpd @155
+    FDKsbrEnc_EncodeOpd @156
+    FDKsbrEnc_WritePSBitstream @157
+    FDKsin @158
+    FDKsprintf @159
+    FDKsqrt @160
+    FDKstrchr @161
+    FDKstrcmp @162
+    FDKstrcpy @163
+    FDKstrlen @164
+    FDKstrncmp @165
+    FDKstrncpy @166
+    FDKstrstr @167
+    FDKtan @168
+    IIS_ScanCmdl @169
+    InverseQuantTable @170 DATA
+    KBDWindow1024 @171 DATA
+    KBDWindow120 @172 DATA
+    KBDWindow128 @173 DATA
+    KBDWindow960 @174 DATA
+    LowDelaySynthesis480 @175 DATA
+    LowDelaySynthesis512 @176 DATA
+    MantissaTable @177 DATA
+    RotVectorImag240 @178 DATA
+    RotVectorImag480 @179 DATA
+    RotVectorImag60 @180 DATA
+    RotVectorReal240 @181 DATA
+    RotVectorReal480 @182 DATA
+    RotVectorReal60 @183 DATA
+    ScaleFactors @184 DATA
+    ScaleFactorsFine @185 DATA
+    SineTable480 @186 DATA
+    SineTable512 @187 DATA
+    SineWindow1024 @188 DATA
+    SineWindow120 @189 DATA
+    SineWindow128 @190 DATA
+    SineWindow32 @191 DATA
+    SineWindow480 @192 DATA
+    SineWindow512 @193 DATA
+    SineWindow64 @194 DATA
+    SineWindow960 @195 DATA
+    WAV_InputClose @196
+    WAV_InputOpen @197
+    WAV_InputRead @198
+    WAV_OutputClose @199
+    WAV_OutputOpen @200
+    WAV_OutputWrite @201
+    _Z10ApplyToolsPP22CAacDecoderChannelInfoPK16SamplingRateInfoji @202
+    _Z10CPns_ApplyPK8CPnsDataPK8CIcsInfoPlPKsS7_PK16SamplingRateInfoii @203
+    _Z10CRvlc_ReadP22CAacDecoderChannelInfoP13FDK_BITSTREAM @204
+    _Z10CTns_ApplyP8CTnsDataPK8CIcsInfoPlPK16SamplingRateInfoi @205
+    _Z10CTns_ResetP8CTnsData @206
+    _Z10CalcLdDatal @207
+    _Z10FDKcrcInitP11FDK_CRCINFOjjj @208
+    _Z10FDKpushForP13FDK_BITSTREAMj @209
+    _Z10GetDrcInfoi @210
+    _Z10HcrDecoderP10CErHcrInfoP22CAacDecoderChannelInfoPK16SamplingRateInfoP13FDK_BITSTREAM @211
+    _Z10HcrInitRomP10CErHcrInfo @212
+    _Z10PSEnc_InitP19T_PARAMETRIC_STEREOP14T_PSENC_CONFIGiiPh @213
+    _Z10ReadPsDataP6PS_DECP13FDK_BITSTREAMi @214
+    _Z10ResetPsDecP6PS_DEC @215
+    _Z10fixp_atan2ll @216
+    _Z10getHcrTypeP10CErHcrInfo @217
+    _Z10imdct_gainPlPii @218
+    _Z10setHcrTypeP10CErHcrInfo14MP4_ELEMENT_ID @219
+    _Z11ApplyPsSlotP6PS_DECPPlS2_S1_S1_ @220
+    _Z11CreatePsDecPP6PS_DECi @221
+    _Z11DeletePsDecPP6PS_DEC @222
+    _Z11FDKcrcResetP11FDK_CRCINFO @223
+    _Z11FDKpushBackP13FDK_BITSTREAMj @224
+    _Z11FDKreadBitsP13FDK_BITSTREAMj @225
+    _Z11FreeDrcInfoPP8CDrcInfo @226
+    _Z11SbrCrcCheckP13FDK_BITSTREAMl @227
+    _Z11calcAvgGainP13ENV_CALC_NRGSiiPlPaS1_S2_ @228
+    _Z11imdct_blockP6mdct_tPlS1_PKsiiiPK8FIXP_SPKiS6_il @229
+    _Z11imdct_drainP6mdct_tPli @230
+    _Z11resetSbrDecP7SBR_DECP15SBR_HEADER_DATAP19SBR_PREV_FRAME_DATAii @231
+    _Z12CPns_InitPnsP8CPnsDataP20CPnsInterChannelDataPiS3_ @232
+    _Z12CRvlc_DecodeP22CAacDecoderChannelInfoP28CAacDecoderStaticChannelInfoP13FDK_BITSTREAM @233
+    _Z12FDKbyteAlignP13FDK_BITSTREAMj @234
+    _Z12FDKcrcEndRegP11FDK_CRCINFOP13FDK_BITSTREAMi @235
+    _Z12FDKcrcGetCRCP11FDK_CRCINFO @236
+    _Z12LdDataVectorPlS_i @237
+    _Z12PSEnc_CreatePP19T_PARAMETRIC_STEREO @238
+    _Z12ResetPsDeCorP6PS_DEC @239
+    _Z12createSbrDecP11SBR_CHANNELP15SBR_HEADER_DATAP19TRANSPOSER_SETTINGSijjii @240
+    _Z12deleteSbrDecP11SBR_CHANNEL @241
+    _Z12fixp_cos_sinliPlS_ @242
+    _Z12invSqrtNorm2lPi @243
+    _Z12mapSineFlagsPhiS_PiiPa @244
+    _Z13CalcInvLdDatal @245
+    _Z13DecodeNonPCWsP13FDK_BITSTREAMP10CErHcrInfo @246
+    _Z13GetAacDecoderi @247
+    _Z13GetRam_ps_deci @248
+    _Z13IcsReadMaxSfbP13FDK_BITSTREAMP8CIcsInfoPK16SamplingRateInfo @249
+    _Z13PSEnc_DestroyPP19T_PARAMETRIC_STEREO @250
+    _Z13calcNrgPerSfbPPlS0_iPhiiaS_Pa @251
+    _Z13decodeSbrDataP15SBR_HEADER_DATAP14SBR_FRAME_DATAP19SBR_PREV_FRAME_DATAS2_S4_ @252
+    _Z13lppTransposerP13SBR_LPP_TRANSP16QMF_SCALE_FACTORPPlS3_S4_iiiiiP9INVF_MODES6_ @253
+    _Z14CPns_IsPnsUsedPK8CPnsDataii @254
+    _Z14CPns_ResetDataP8CPnsDataP20CPnsInterChannelData @255
+    _Z14FDKcrcStartRegP11FDK_CRCINFOP13FDK_BITSTREAMi @256
+    _Z14FreeAacDecoderPP20AAC_DECODER_INSTANCE @257
+    _Z14FreeRam_ps_decPP6PS_DEC @258
+    _Z14Get_AacEncoderi @259
+    _Z14InitInvSqrtTabv @260
+    _Z14adtsWrite_InitP11STRUCT_ADTSP12CODER_CONFIG @261
+    _Z14initHeaderDataP15SBR_HEADER_DATAiiij @262
+    _Z15CLatmDemux_ReadP13FDK_BITSTREAMP10CLatmDemux14TRANSPORT_TYPEP13CSTpCallBacksP21CSAudioSpecificConfigi @263
+    _Z15CPulseData_ReadP13FDK_BITSTREAMP10CPulseDataPKsPKvs @264
+    _Z15DecodeHuffmanCWPA2_KaP13FDK_BITSTREAM @265
+    _Z15FDKaacEnc_BCNewPP13BITCNTR_STATEPh @266
+    _Z15FDKaacEnc_QCNewPP8QC_STATEiPh @267
+    _Z15Free_AacEncoderPP10AACENCODER @268
+    _Z15GetRam_PsEncodei @269
+    _Z15calcSubbandGainlaP13ENV_CALC_NRGSilahhi @270
+    _Z15mul_dbl_sgl_rndls @271
+    _Z16CAacDecoder_InitP20AAC_DECODER_INSTANCEPK21CSAudioSpecificConfig @272
+    _Z16CAacDecoder_Open14TRANSPORT_TYPE @273
+    _Z16CBlock_GetEscapeP13FDK_BITSTREAMl @274
+    _Z16CPulseData_ApplyP10CPulseDataPKsPl @275
+    _Z16CopyAlignedBlockP10FDK_BITBUFPhj @276
+    _Z16FDKaacEnc_PsyNewPP12PSY_INTERNALiiPh @277
+    _Z16FDKaacEnc_QCInitP8QC_STATEP7QC_INIT @278
+    _Z16FDKaacEnc_QCMainP8QC_STATEPP7PSY_OUTPP6QC_OUTiP15CHANNEL_MAPPING17AUDIO_OBJECT_TYPEja @279
+    _Z16FreeRam_PsEncodePP11T_PS_ENCODE @280
+    _Z16GetOverlapBufferi @281
+    _Z16adjustTimeSlotHQPlS_P22SBR_CALCULATE_ENVELOPEP13ENV_CALC_NRGSiiisii @282
+    _Z16adjustTimeSlotLCPlP13ENV_CALC_NRGSPhiiiiPii @283
+    _Z16adtsRead_CrcInitP11STRUCT_ADTS @284
+    _Z16autoCorr2nd_cplxP11ACORR_COEFSPKlS2_i @285
+    _Z16autoCorr2nd_realP11ACORR_COEFSPKli @286
+    _Z16fDivNormHighPrecllPi @287
+    _Z16getChannelConfig12CHANNEL_MODE @288
+    _Z16maxSubbandSamplePPlS0_iiii @289
+    _Z16qmfChangeOutGainP15QMF_FILTER_BANKl @290
+    _Z16sbrGetHeaderDataP15SBR_HEADER_DATAP13FDK_BITSTREAMji @291
+    _Z17CAacDecoder_CloseP20AAC_DECODER_INSTANCE @292
+    _Z17CJointStereo_ReadP13FDK_BITSTREAMP16CJointStereoDataiij @293
+    _Z17FDKaacEnc_BCClosePP13BITCNTR_STATE @294
+    _Z17FDKaacEnc_QCClosePP8QC_STATEPP6QC_OUT @295
+    _Z17FDKaacEnc_TnsSyncP8TNS_DATAPKS_P8TNS_INFOS4_iiPK10TNS_CONFIG @296
+    _Z17FDKaacEnc_psyInitP12PSY_INTERNALPP7PSY_OUTii17AUDIO_OBJECT_TYPEP15CHANNEL_MAPPING @297
+    _Z17FDKaacEnc_psyMainiP11PSY_ELEMENTP11PSY_DYNAMICP17PSY_CONFIGURATIONP15PSY_OUT_ELEMENTPsPii @298
+    _Z17FDKgetWindowSlopeii @299
+    _Z17FDKsbrEnc_AddLeftPiS_i @300
+    _Z17FreeOverlapBufferPPl @301
+    _Z17GetAACdynamic_RAMi @302
+    _Z17GetRam_SbrChanneli @303
+    _Z17GetRam_SbrDecoderi @304
+    _Z17GetRam_SbrElementi @305
+    _Z17GetRam_SbrEncoderi @306
+    _Z17ResetLimiterBandsPhS_S_iPK11PATCH_PARAMii @307
+    _Z17adtsRead_CrcCheckP11STRUCT_ADTS @308
+    _Z17aliasingReductionPlP13ENV_CALC_NRGSPii @309
+    _Z17calcNrgPerSubbandPPlS0_iiiiaS_Pa @310
+    _Z17decodeRVLCodewordP13FDK_BITSTREAMP11CErRvlcInfo @311
+    _Z17transportDec_Open14TRANSPORT_TYPEj @312
+    _Z17transportEnc_InitP12TRANSPORTENCPhi14TRANSPORT_TYPEP12CODER_CONFIGj @313
+    _Z17transportEnc_OpenPP12TRANSPORTENC @314
+    _Z18CConcealment_ApplyP16CConcealmentInfoP22CAacDecoderChannelInfoP28CAacDecoderStaticChannelInfoPK16SamplingRateInfoihij @315
+    _Z18CConcealment_StoreP16CConcealmentInfoP22CAacDecoderChannelInfoP28CAacDecoderStaticChannelInfo @316
+    _Z18CRvlc_ElementCheckPP22CAacDecoderChannelInfoPP28CAacDecoderStaticChannelInfoji @317
+    _Z18FDKaacEnc_PsyClosePP12PSY_INTERNALPP7PSY_OUT @318
+    _Z18FDKaacEnc_QCOutNewPP6QC_OUTiiiPh @319
+    _Z18FDKaacEnc_bitCountPKsiiPi @320
+    _Z18FDKsbrEnc_AddRightPiS_i @321
+    _Z18FDKsbrEnc_PSEncodeP11T_PS_ENCODEP8T_PS_OUTPhjPA2_A2_Plii @322
+    _Z18FreeAACdynamic_RAMPPl @323
+    _Z18FreeRam_SbrChannelPP11SBR_CHANNEL @324
+    _Z18FreeRam_SbrDecoderPP20SBR_DECODER_INSTANCE @325
+    _Z18FreeRam_SbrElementPP11SBR_ELEMENT @326
+    _Z18FreeRam_SbrEncoderPP11SBR_ENCODER @327
+    _Z18GetRam_ParamStereoi @328
+    _Z18GetRam_bsOutbufferi @329
+    _Z18GetWorkBufferCore1i @330
+    _Z18GetWorkBufferCore2i @331
+    _Z18aacDecoder_drcInitP8CDrcInfo @332
+    _Z18adtsRead_CrcEndRegP11STRUCT_ADTSP13FDK_BITSTREAMi @333
+    _Z18resetLppTransposerP13SBR_LPP_TRANShPhhS1_hhj @334
+    _Z18transportDec_ClosePP12TRANSPORTDEC @335
+    _Z18transportEnc_ClosePP12TRANSPORTENC @336
+    _Z19CPns_SetCorrelationP8CPnsDataiii @337
+    _Z19CProgramConfig_InitP14CProgramConfig @338
+    _Z19CProgramConfig_ReadP14CProgramConfigP13FDK_BITSTREAMj @339
+    _Z19FDKaacEnc_AdjThrNewPP13ADJ_THR_STATEi @340
+    _Z19FDKaacEnc_PnsDetectP10PNS_CONFIGP8PNS_DATAiiiPlPKiS3_PiPsiiiS3_S6_ @341
+    _Z19FDKaacEnc_PsyOutNewPP7PSY_OUTiiiPh @342
+    _Z19FDKaacEnc_QCOutInitPP6QC_OUTiPK15CHANNEL_MAPPING @343
+    _Z19FDKaacEnc_TnsDetectP8TNS_DATAPK10TNS_CONFIGP8TNS_INFOiPlii @344
+    _Z19FDKaacEnc_TnsEncodeP8TNS_INFOP8TNS_DATAiPK10TNS_CONFIGiPlii @345
+    _Z19FDKaacEnc_calcSfbPeP15PE_CHANNEL_DATAPKlS2_iiiPKiS4_ @346
+    _Z19FreeRam_ParamStereoPP19T_PARAMETRIC_STEREO @347
+    _Z19FreeRam_bsOutbufferPPh @348
+    _Z19FreeWorkBufferCore1PP16CWorkBufferCore1 @349
+    _Z19FreeWorkBufferCore2PPl @350
+    _Z19GetRam_aacEnc_QCouti @351
+    _Z19Hcr_State_BODY_ONLYP13FDK_BITSTREAMPv @352
+    _Z19IIS_ProcessCmdlListPKcPFiiPPcE @353
+    _Z19ToggleReadDirectionh @354
+    _Z19aacDecoder_drcApplyP8CDrcInfoPvP22CAacDecoderChannelInfoP15CDrcChannelDataiii @355
+    _Z19aacEncDefaultConfigP13AACENC_CONFIGP10USER_PARAM @356
+    _Z19adtsWrite_CrcEndRegP11STRUCT_ADTSP13FDK_BITSTREAMi @357
+    _Z19createLppTransposerP13SBR_LPP_TRANSP19TRANSPOSER_SETTINGSiPhiiiiS3_ijii @358
+    _Z19fillHybridDelayLinePPlS0_S_S_S_S_P6HYBRID @359
+    _Z19getSamplingRateInfoP16SamplingRateInfojjj @360
+    _Z19resetFreqBandTablesP15SBR_HEADER_DATAj @361
+    _Z19sbrDecoder_drcApplyP18SBRDEC_DRC_CHANNELPPlS2_iPi @362
+    _Z20CChannelElement_ReadP13FDK_BITSTREAMPP22CAacDecoderChannelInfoPP28CAacDecoderStaticChannelInfo17AUDIO_OBJECT_TYPEPK16SamplingRateInfojjhaP12TRANSPORTDEC @363
+    _Z20CJointStereo_ApplyISPP22CAacDecoderChannelInfoPKsPKhiij @364
+    _Z20CJointStereo_ApplyMSPP22CAacDecoderChannelInfoPKsPKhiii @365
+    _Z20CProgramConfig_ResetP14CProgramConfig @366
+    _Z20FDK_MetadataEnc_InitP20FDK_METADATA_ENCODERiiijjj12CHANNEL_MODE13CHANNEL_ORDER @367
+    _Z20FDK_MetadataEnc_OpenPP20FDK_METADATA_ENCODER @368
+    _Z20FDKaacEnc_AdjThrInitP13ADJ_THR_STATEiPP12ELEMENT_BITSil @369
+    _Z20FDKaacEnc_DownsampleP11DOWNSAMPLERPsiiS1_Pii @370
+    _Z20FDKaacEnc_codeValuesPsiiP13FDK_BITSTREAM @371
+    _Z20FDKpushBiDirectionalP13FDK_BITSTREAMi @372
+    _Z20FDKsbrEnc_AddVecLeftPiS_S_i @373
+    _Z20FreeRam_aacEnc_QCoutPP6QC_OUT @374
+    _Z20GetRam_SbrDecChanneli @375
+    _Z20GetRam_SbrDecElementi @376
+    _Z20GetRam_Sbr_guideScfbi @377
+    _Z20GetRam_aacEnc_PsyOuti @378
+    _Z20InitHybridFilterBankP6HYBRIDaaPKh @379
+    _Z20aacDecoder_drcEpilogP8CDrcInfoP13FDK_BITSTREAMPP28CAacDecoderStaticChannelInfohPhi @380
+    _Z20aacDecoder_drcPrologP8CDrcInfoP13FDK_BITSTREAMPP28CAacDecoderStaticChannelInfohPhi @381
+    _Z20adtsRead_CrcStartRegP11STRUCT_ADTSP13FDK_BITSTREAMi @382
+    _Z20calculateSbrEnvelopeP16QMF_SCALE_FACTORP22SBR_CALCULATE_ENVELOPEP15SBR_HEADER_DATAP14SBR_FRAME_DATAPPlS8_iS7_ji @383
+    _Z20imdct_copy_ov_and_nrP6mdct_tPli @384
+    _Z20initSbrPrevFrameDataP19SBR_PREV_FRAME_DATAi @385
+    _Z20qmfAnalysisFilteringP15QMF_FILTER_BANKPPlS2_P16QMF_SCALE_FACTORPKsiS1_ @386
+    _Z20resetSbrEnvelopeCalcP22SBR_CALCULATE_ENVELOPE @387
+    _Z20scalFilterBankValuesP6PS_DECPPlS2_iiiPaS3_iPii @388
+    _Z20transportEnc_GetConfP12TRANSPORTENCP12CODER_CONFIGP13FDK_BITSTREAMPj @389
+    _Z21CConcealment_GetDelayP14CConcealParams @390
+    _Z21CConcealment_GetStateP16CConcealmentInfo @391
+    _Z21CarryBitToBranchValuehjPjS_ @392
+    _Z21CreateStreamMuxConfigP11LATM_STREAMP13FDK_BITSTREAMiP13CSTpCallBacks @393
+    _Z21FDK_MetadataEnc_ClosePP20FDK_METADATA_ENCODER @394
+    _Z21FDKaacEnc_AdjThrClosePP13ADJ_THR_STATE @395
+    _Z21FDKaacEnc_GetPnsParamP11NOISEPARAMSiiiPKiPiii @396
+    _Z21FDKaacEnc_calcSfbDistPlPsii @397
+    _Z21FDKaacEnc_countValuesPsii @398
+    _Z21FDKaacEnc_dynBitCountP13BITCNTR_STATEPKsPKjPKiiiiiS6_P12SECTION_DATAS6_S6_S6_j @399
+    _Z21FDKaacEnc_noiseDetectPlPiiPKiPsP11NOISEPARAMSS3_ @400
+    _Z21FDKaacEnc_psyMainInitP12PSY_INTERNAL17AUDIO_OBJECT_TYPEP15CHANNEL_MAPPINGiiiiiiijm @401
+    _Z21FDKhybridAnalysisInitP18FDK_ANA_HYB_FILTER15FDK_HYBRID_MODEiii @402
+    _Z21FDKhybridAnalysisOpenP18FDK_ANA_HYB_FILTERPljS1_j @403
+    _Z21FDKsbrEnc_AddVecRightPiS_S_i @404
+    _Z21FDKsbrEnc_UpdateHiResPhPiS_iS0_7SR_MODEi @405
+    _Z21FDKsbrEnc_UpdateLoResPhPiS_i @406
+    _Z21FreeRam_SbrDecChannelPP11SBR_CHANNEL @407
+    _Z21FreeRam_SbrDecElementPP19SBR_DECODER_ELEMENT @408
+    _Z21FreeRam_Sbr_guideScfbPPh @409
+    _Z21FreeRam_aacEnc_PsyOutPP7PSY_OUT @410
+    _Z21GetRam_SbrDynamic_RAMi @411
+    _Z21GetRam_Sbr_envIBufferiPh @412
+    _Z21GetRam_Sbr_envRBufferiPh @413
+    _Z21GetRam_Sbr_envYBufferi @414
+    _Z21GetRam_Sbr_envYBufferiPh @415
+    _Z21GetRam_Sbr_signMatrixi @416
+    _Z21GetRam_Sbr_v_k_masteri @417
+    _Z21GetRam_aacEnc_QCstatei @418
+    _Z21GetRequiredMemDrcInfov @419
+    _Z21HcrMuteErroneousLinesP10CErHcrInfo @420
+    _Z21StatisticalEstimationP22CAacDecoderChannelInfo @421
+    _Z21adifRead_DecodeHeaderP11CAdifHeaderP14CProgramConfigP13FDK_BITSTREAM @422
+    _Z21adtsRead_DecodeHeaderP11STRUCT_ADTSP21CSAudioSpecificConfigP13FDK_BITSTREAMi @423
+    _Z21adtsWrite_CrcStartRegP11STRUCT_ADTSP13FDK_BITSTREAMi @424
+    _Z21createSbrEnvelopeCalcP22SBR_CALCULATE_ENVELOPEP15SBR_HEADER_DATAij @425
+    _Z21deleteSbrEnvelopeCalcP22SBR_CALCULATE_ENVELOPE @426
+    _Z21equalizeFiltBufferExpPlPaS_S0_i @427
+    _Z21getChannelDescription20PCM_DMX_CHANNEL_MODEPA8_KhP18AUDIO_CHANNEL_TYPEPhS5_ @428
+    _Z21initSlotBasedRotationP6PS_DECii @429
+    _Z21qmfSynthesisFilteringP15QMF_FILTER_BANKPPlS2_PK16QMF_SCALE_FACTORiPsiS1_ @430
+    _Z21rescaleSubbandSamplesPPlS0_iiiii @431
+    _Z21sbrdecDownSampleLoResPhhS_h @432
+    _Z21sbrdecUpdateFreqScalePhS_jP15SBR_HEADER_DATAj @433
+    _Z21transportDec_CrcCheckP12TRANSPORTDEC @434
+    _Z21transportDec_FillDataP12TRANSPORTDECPhjPji @435
+    _Z21transportDec_SetParamP12TRANSPORTDEC11TPDEC_PARAMi @436
+    _Z21transportEnc_GetFrameP12TRANSPORTENCPi @437
+    _Z21transportEnc_writeASCP13FDK_BITSTREAMP12CODER_CONFIGP13CSTpCallBacks @438
+    _Z21transportEnc_writePCEP13FDK_BITSTREAM12CHANNEL_MODEiiiiij @439
+    _Z22CAacDecoder_AncDataGetP8CAncDataiPPhPi @440
+    _Z22CBlock_FrequencyToTimeP28CAacDecoderStaticChannelInfoP22CAacDecoderChannelInfoPssiiPl @441
+    _Z22CBlock_ReadSectionDataP13FDK_BITSTREAMP22CAacDecoderChannelInfoPK16SamplingRateInfoj @442
+    _Z22CChannelElement_DecodePP22CAacDecoderChannelInfoPP28CAacDecoderStaticChannelInfoP16SamplingRateInfoji @443
+    _Z22CConcealment_GetMethodP14CConcealParams @444
+    _Z22CConcealment_SetParamsP14CConcealParamsiiiii @445
+    _Z22CProgramConfig_IsValidPK14CProgramConfig @446
+    _Z22FDK_DRC_Generator_CalcP8DRC_COMPPKsiiillPiS3_ @447
+    _Z22FDK_DRC_Generator_OpenPP8DRC_COMP @448
+    _Z22FDKaacEnc_SpreadingMaxiPKlS0_Pl @449
+    _Z22FDKaacEnc_lookUpPnsUseiiii @450
+    _Z22FDKaacEnc_prepareSfbPeP15PE_CHANNEL_DATAPKlS2_S2_PKiiii @451
+    _Z22FDKaacEnc_reduceMinSnrP15CHANNEL_MAPPINGPP14QC_OUT_ELEMENTPP15PSY_OUT_ELEMENTPA2_A60_hiPiii @452
+    _Z22FDKaacEnc_updateBitresP15CHANNEL_MAPPINGP8QC_STATEPP6QC_OUT @453
+    _Z22FDKhybridAnalysisApplyP18FDK_ANA_HYB_FILTERPKlS2_PlS3_ @454
+    _Z22FDKhybridAnalysisCloseP18FDK_ANA_HYB_FILTER @455
+    _Z22FDKhybridSynthesisInitP18FDK_SYN_HYB_FILTER15FDK_HYBRID_MODEii @456
+    _Z22FDKsbrEnc_InitPSEncodeP11T_PS_ENCODE8PS_BANDSl @457
+    _Z22FDKsbrEnc_codeEnvelopePaPK8FREQ_RESP17SBR_CODE_ENVELOPEPiiiii @458
+    _Z22FreeRam_SbrDynamic_RAMPPl @459
+    _Z22FreeRam_Sbr_envYBufferPPl @460
+    _Z22FreeRam_Sbr_signMatrixPPi @461
+    _Z22FreeRam_Sbr_v_k_masterPPh @462
+    _Z22FreeRam_aacEnc_QCstatePP8QC_STATE @463
+    _Z22GetRam_Sbr_quotaMatrixi @464
+    _Z22aacDecoder_drcSetParamP8CDrcInfo16AACDEC_DRC_PARAMi @465
+    _Z22adifWrite_EncodeHeaderP9ADIF_INFOP13FDK_BITSTREAMi @466
+    _Z22adtsWrite_EncodeHeaderP11STRUCT_ADTSP13FDK_BITSTREAMii @467
+    _Z22imdct_adapt_parametersP6mdct_tPiS1_iPK8FIXP_SPKi @468
+    _Z22rescalFilterBankValuesP6PS_DECPPlS2_ii @469
+    _Z22transportDec_CrcEndRegP12TRANSPORTDECi @470
+    _Z22transportDec_GetFormatP12TRANSPORTDEC @471
+    _Z22transportEnc_CrcEndRegP12TRANSPORTENCi @472
+    _Z22transportEnc_LatmWriteP11LATM_STREAMP13FDK_BITSTREAMiiP13CSTpCallBacks @473
+    _Z22transportEnc_Latm_InitP11LATM_STREAMP13FDK_BITSTREAMP12CODER_CONFIGj14TRANSPORT_TYPEP13CSTpCallBacks @474
+    _Z23CAacDecoder_AncDataInitP8CAncDataPhi @475
+    _Z23CAacDecoder_DecodeFrameP20AAC_DECODER_INSTANCEjPsii @476
+    _Z23CAacDecoder_SyncQmfModeP20AAC_DECODER_INSTANCE @477
+    _Z23CBlock_ReadSpectralDataP13FDK_BITSTREAMP22CAacDecoderChannelInfoPK16SamplingRateInfoj @478
+    _Z23FDK_DRC_Generator_ClosePP8DRC_COMP @479
+    _Z23FDK_MetadataEnc_ProcessP20FDK_METADATA_ENCODERPsiPK15AACENC_MetaDataPP18AACENC_EXT_PAYLOADPjPi @480
+    _Z23FDKaacEnc_AdjustBitrateP8QC_STATEP15CHANNEL_MAPPINGPiiii @481
+    _Z23FDKaacEnc_QCMainPrepareP12ELEMENT_INFOP11ATS_ELEMENTP15PSY_OUT_ELEMENTP14QC_OUT_ELEMENT17AUDIO_OBJECT_TYPEja @482
+    _Z23FDKaacEnc_peCalculationP7PE_DATAPP15PSY_OUT_CHANNELPP14QC_OUT_CHANNELP9TOOLSINFOP11ATS_ELEMENTi @483
+    _Z23FDKaacEnc_psyInitStatesP12PSY_INTERNALP10PSY_STATIC17AUDIO_OBJECT_TYPE @484
+    _Z23FDKhybridSynthesisApplyP18FDK_SYN_HYB_FILTERPKlS2_PlS3_ @485
+    _Z23FDKsbrEnc_Shellsort_intPii @486
+    _Z23FDKsbrEnc_frameSplitterPPlPiP22SBR_TRANSIENT_DETECTORPhS4_iiiii @487
+    _Z23FreeRam_Sbr_quotaMatrixPPl @488
+    _Z23GetRam_TransportDecoderi @489
+    _Z23GetRam_TransportEncoderi @490
+    _Z23GetRam_aacEnc_BitLookUpiPh @491
+    _Z23GetRam_aacEnc_PsyStatici @492
+    _Z23GetRam_aacEnc_QCchanneliPh @493
+    _Z23GetRam_aacEnc_QCelementi @494
+    _Z23HcrGetABitFromBitstreamP13FDK_BITSTREAMPtS1_h @495
+    _Z23PredictiveInterpolationP22CAacDecoderChannelInfoP28CAacDecoderStaticChannelInfo @496
+    _Z23adifWrite_GetHeaderBitsP9ADIF_INFO @497
+    _Z23adtsWrite_GetHeaderBitsP11STRUCT_ADTS @498
+    _Z23getBitstreamElementList17AUDIO_OBJECT_TYPEahh @499
+    _Z23qmfChangeOutScalefactorP15QMF_FILTER_BANKi @500
+    _Z23sbrDecoder_drcApplySlotP18SBRDEC_DRC_CHANNELPlS1_iii @501
+    _Z23slotBasedHybridAnalysisPlS_S_S_P6HYBRID @502
+    _Z23transportDec_GetLibInfoP8LIB_INFO @503
+    _Z23transportEnc_GetLibInfoP8LIB_INFO @504
+    _Z23transportEnc_GetPCEBits12CHANNEL_MODEii @505
+    _Z24AudioSpecificConfig_InitP21CSAudioSpecificConfig @506
+    _Z24CBlock_ScaleSpectralDataP22CAacDecoderChannelInfoP16SamplingRateInfo @507
+    _Z24CTns_ReadDataPresentFlagP13FDK_BITSTREAMP8CTnsData @508
+    _Z24FDK_MetadataEnc_GetDelayP20FDK_METADATA_ENCODER @509
+    _Z24FDKaacEnc_BlockSwitchingP23BLOCK_SWITCHING_CONTROLii @510
+    _Z24FDKaacEnc_CalcFormFactorPP14QC_OUT_CHANNELPP15PSY_OUT_CHANNELi @511
+    _Z24FDKaacEnc_CodePnsChanneliP10PNS_CONFIGPiPlS1_S2_ @512
+    _Z24FDKaacEnc_DistributeBitsP13ADJ_THR_STATEP11ATS_ELEMENTPP15PSY_OUT_CHANNELP7PE_DATAPiS8_iiiiili @513
+    _Z24FDKaacEnc_PreEchoControlPliiisS_iPi @514
+    _Z24FDKaacEnc_Transform_RealPKsPliiPiiS2_iS1_ @515
+    _Z24FDKaacEnc_WriteBitstreamP12TRANSPORTENCP15CHANNEL_MAPPINGP6QC_OUTP7PSY_OUTP8QC_STATE17AUDIO_OBJECT_TYPEja @516
+    _Z24FDKaacEnc_groupShortDataPlP13SFB_THRESHOLDP10SFB_ENERGYS3_S3_iiPKiPKlPiS8_S_iS5_i @517
+    _Z24FDKaacEnc_updateFillBitsP15CHANNEL_MAPPINGP8QC_STATEPP12ELEMENT_BITSPP6QC_OUT @518
+    _Z24FDKsbrEnc_CreatePSEncodePP11T_PS_ENCODE @519
+    _Z24FDKsbrEnc_EnvEncodeFrameP11SBR_ENCODERiPsjPjPhi @520
+    _Z24FDKsbrEnc_GetEnvEstDelayP20SBR_EXTRACT_ENVELOPE @521
+    _Z24FreeRam_TransportDecoderPP12TRANSPORTDEC @522
+    _Z24FreeRam_TransportEncoderPP12TRANSPORTENC @523
+    _Z24FreeRam_aacEnc_PsyStaticPP10PSY_STATIC @524
+    _Z24FreeRam_aacEnc_QCelementPP14QC_OUT_ELEMENT @525
+    _Z24GetAacDecoderChannelInfoi @526
+    _Z24GetRam_SbrDecWorkBuffer1i @527
+    _Z24GetRam_SbrDecWorkBuffer2i @528
+    _Z24GetRam_aacEnc_AacEncoderi @529
+    _Z24GetRam_aacEnc_PsyDynamiciPh @530
+    _Z24GetRam_aacEnc_PsyElementi @531
+    _Z24GetRam_sbr_OverlapBufferi @532
+    _Z24GetRequiredMemAacDecoderv @533
+    _Z24GetRequiredMemRam_ps_decv @534
+    _Z24qmfAnalysisFilteringSlotP15QMF_FILTER_BANKPlS1_PKsiS1_ @535
+    _Z24rvlcReadBitFromBitstreamP13FDK_BITSTREAMPth @536
+    _Z24sbrGetChannelPairElementP15SBR_HEADER_DATAP14SBR_FRAME_DATAS2_P13FDK_BITSTREAMji @537
+    _Z24sbrGetSyntheticCodedDataP15SBR_HEADER_DATAP14SBR_FRAME_DATAP13FDK_BITSTREAM @538
+    _Z24slotBasedHybridSynthesisPlS_S_S_P6HYBRID @539
+    _Z24transportDec_CrcStartRegP12TRANSPORTDECi @540
+    _Z24transportEnc_CrcStartRegP12TRANSPORTENCi @541
+    _Z25AudioSpecificConfig_ParseP21CSAudioSpecificConfigP13FDK_BITSTREAMiP13CSTpCallBacks @542
+    _Z25CAacDecoder_GetStreamInfoP20AAC_DECODER_INSTANCE @543
+    _Z25FDKaacEnc_InitDownsamplerP11DOWNSAMPLERii @544
+    _Z25FDKaacEnc_InitElementBitsP8QC_STATEP15CHANNEL_MAPPINGiii @545
+    _Z25FDKsbrEnc_DestroyPSEncodePP11T_PS_ENCODE @546
+    _Z25FDKsbrEnc_Shellsort_fractPli @547
+    _Z25FDKsbrEnc_UpdateFreqScalePhPiiiii @548
+    _Z25FDKsbrEnc_transientDetectP22SBR_TRANSIENT_DETECTORPPlPiPhiiii @549
+    _Z25FreeAacDecoderChannelInfoPP22CAacDecoderChannelInfo @550
+    _Z25FreeRam_SbrDecWorkBuffer1PPl @551
+    _Z25FreeRam_SbrDecWorkBuffer2PPl @552
+    _Z25FreeRam_aacEnc_AacEncoderPP7AAC_ENC @553
+    _Z25FreeRam_aacEnc_PsyElementPP11PSY_ELEMENT @554
+    _Z25FreeRam_sbr_OverlapBufferPPl @555
+    _Z25GetRam_aacEnc_ElementBitsi @556
+    _Z25GetRam_aacEnc_PsyInternali @557
+    _Z25GetRequiredMem_AacEncoderv @558
+    _Z25Hcr_State_BODY_SIGN__BODYP13FDK_BITSTREAMPv @559
+    _Z25Hcr_State_BODY_SIGN__SIGNP13FDK_BITSTREAMPv @560
+    _Z25aacDecoder_drcMarkPayloadP8CDrcInfoP13FDK_BITSTREAM23AACDEC_DRC_PAYLOAD_TYPE @561
+    _Z25adtsWrite_EndRawDataBlockP11STRUCT_ADTSP13FDK_BITSTREAMPi @562
+    _Z25qmfInitAnalysisFilterBankP15QMF_FILTER_BANKPsiiiii @563
+    _Z25qmfSynthesisFilteringSlotP15QMF_FILTER_BANKPKlS2_iiPsiPl @564
+    _Z25sbrDecoder_drcInitChannelP18SBRDEC_DRC_CHANNEL @565
+    _Z25transportDec_GetBitstreamP12TRANSPORTDECj @566
+    _Z25transportEnc_GetBitstreamP12TRANSPORTENC @567
+    _Z25transportEnc_LatmGetFrameP11LATM_STREAMP13FDK_BITSTREAMPi @568
+    _Z26CBlock_ReadScaleFactorDataP22CAacDecoderChannelInfoP13FDK_BITSTREAMj @569
+    _Z26CChannel_CodebookTableInitP22CAacDecoderChannelInfo @570
+    _Z26CConcealment_GetFadeFactorP16CConcealmentInfoi @571
+    _Z26FDKaacEnc_AdjustThresholdsPP11ATS_ELEMENTPP14QC_OUT_ELEMENTP6QC_OUTPP15PSY_OUT_ELEMENTiP15CHANNEL_MAPPING @572
+    _Z26FDKaacEnc_CalcBandNrgMSOptPKlS0_PiS1_PKiiPlS4_iS4_S4_ @573
+    _Z26FDKaacEnc_QuantizeSpectrumiiiPiPliS_Ps @574
+    _Z26FDKsbrEnc_InitSbrBitstreamP11COMMON_DATAPhiP11FDK_CRCINFOj @575
+    _Z26FDKsbrEnc_TonCorrParamExtrP16SBR_TON_CORR_ESTP9INVF_MODEPlPiPhS5_PK14SBR_FRAME_INFOS5_S5_i9XPOS_MODEj @576
+    _Z26FreeRam_aacEnc_ElementBitsPP12ELEMENT_BITS @577
+    _Z26FreeRam_aacEnc_PsyInternalPP12PSY_INTERNAL @578
+    _Z26GetRam_Sbr_freqBandTableHIi @579
+    _Z26GetRam_Sbr_freqBandTableLOi @580
+    _Z26GetRam_Sbr_guideVectorDiffi @581
+    _Z26GetRam_Sbr_guideVectorOrigi @582
+    _Z26GetRam_aacEnc_BitCntrStatei @583
+    _Z26GetRequiredMemRam_PsEncodev @584
+    _Z26qmfInitSynthesisFilterBankP15QMF_FILTER_BANKPliiiii @585
+    _Z26sbrGetSingleChannelElementP15SBR_HEADER_DATAP14SBR_FRAME_DATAP13FDK_BITSTREAMP6PS_DECji @586
+    _Z26transportDec_EndAccessUnitP12TRANSPORTDEC @587
+    _Z26transportEnc_EndAccessUnitP12TRANSPORTENCPi @588
+    _Z26transportEnc_GetStaticBitsP12TRANSPORTENCi @589
+    _Z27CConcealment_GetLastFrameOkP16CConcealmentInfoi @590
+    _Z27CConcealment_InitCommonDataP14CConcealParams @591
+    _Z27CConcealment_SetAttenuationP14CConcealParamsPsS1_ @592
+    _Z27CLatmDemux_GetNrOfSubFramesP10CLatmDemux @593
+    _Z27FDKaacEnc_GetMonoStereoMode12CHANNEL_MODE @594
+    _Z27FDKsbrEnc_PSEnc_WritePSDataP19T_PARAMETRIC_STEREOP13FDK_BITSTREAM @595
+    _Z27FDKsbrEnc_getSbrStopFreqRAWiii @596
+    _Z27FreeRam_Sbr_freqBandTableHIPPh @597
+    _Z27FreeRam_Sbr_freqBandTableLOPPh @598
+    _Z27FreeRam_Sbr_guideVectorDiffPPl @599
+    _Z27FreeRam_Sbr_guideVectorOrigPPl @600
+    _Z27FreeRam_aacEnc_BitCntrStatePP13BITCNTR_STATE @601
+    _Z27GetRam_PsQmfStatesSynthesisi @602
+    _Z27GetRam_Sbr_detectionVectorsi @603
+    _Z27GetRam_aacEnc_PsyOutChanneli @604
+    _Z27GetRequiredMemOverlapBufferv @605
+    _Z27sbrDecoder_drcUpdateChannelP18SBRDEC_DRC_CHANNEL @606
+    _Z27transportDec_GetAuBitsTotalP12TRANSPORTDECj @607
+    _Z27transportDec_ReadAccessUnitP12TRANSPORTDECj @608
+    _Z27transportEnc_GetChannelModei @609
+    _Z28CConcealment_InitChannelDataP16CConcealmentInfoP14CConcealParamsi @610
+    _Z28CProgramConfig_LookupElementP14CProgramConfigjjjPhP18AUDIO_CHANNEL_TYPES1_S1_P14MP4_ELEMENT_IDS4_ @611
+    _Z28FDK_DRC_Generator_InitializeP8DRC_COMP11DRC_PROFILES1_ij12CHANNEL_MODE13CHANNEL_ORDERh @612
+    _Z28FDKaacEnc_AdaptThresholdsVBRPP14QC_OUT_CHANNELPP15PSY_OUT_CHANNELP11ATS_ELEMENTP9TOOLSINFOP7PE_DATAi @613
+    _Z28FDKaacEnc_DetermineBandWidthPiii19AACENC_BITRATE_MODEiiP15CHANNEL_MAPPING12CHANNEL_MODE @614
+    _Z28FDKaacEnc_InitBlockSwitchingP23BLOCK_SWITCHING_CONTROLi @615
+    _Z28FDKaacEnc_InitChannelMapping12CHANNEL_MODE13CHANNEL_ORDERP15CHANNEL_MAPPING @616
+    _Z28FDKaacEnc_InitPreEchoControlPlPiiS_S0_ @617
+    _Z28FDKaacEnc_MsStereoProcessingPP8PSY_DATAPP15PSY_OUT_CHANNELPKiPiS7_iiiS6_ @618
+    _Z28FDKaacEnc_SyncBlockSwitchingP23BLOCK_SWITCHING_CONTROLS0_ii @619
+    _Z28FDKaacEnc_writeExtensionDataP12TRANSPORTENCP16QC_OUT_EXTENSIONijj17AUDIO_OBJECT_TYPEa @620
+    _Z28FDKhybridAnalysisScaleStatesP18FDK_ANA_HYB_FILTERi @621
+    _Z28FDKsbrEnc_frameInfoGeneratorP18SBR_ENVELOPE_FRAMEPhS1_iPKi @622
+    _Z28FDKsbrEnc_getSbrStartFreqRAWiii @623
+    _Z28FDKsbrEnc_initPsBandNrgScaleP11T_PS_ENCODE @624
+    _Z28FreeRam_PsQmfStatesSynthesisPPl @625
+    _Z28FreeRam_Sbr_detectionVectorsPPh @626
+    _Z28FreeRam_aacEnc_PsyOutChannelPP15PSY_OUT_CHANNEL @627
+    _Z28GetRam_Sbr_QmfStatesAnalysisi @628
+    _Z28GetRam_aacEnc_PsyInputBufferi @629
+    _Z28GetRam_aacEnc_PsyOutElementsi @630
+    _Z28GetRequiredMemAACdynamic_RAMv @631
+    _Z28GetRequiredMemRam_SbrChannelv @632
+    _Z28GetRequiredMemRam_SbrDecoderv @633
+    _Z28GetRequiredMemRam_SbrElementv @634
+    _Z28GetRequiredMemRam_SbrEncoderv @635
+    _Z28InvMdctTransformLowDelay_fdkPliPsS_ii @636
+    _Z28transportDec_OutOfBandConfigP12TRANSPORTDECPhjj @637
+    _Z28transportEnc_WriteAccessUnitP12TRANSPORTENCiii @638
+    _Z29CLatmDemux_GetOtherDataLengthP10CLatmDemux @639
+    _Z29FDKaacEnc_CalcSfbMaxScaleSpecPKlPKiPii @640
+    _Z29FDKaacEnc_ChannelElementWriteP12TRANSPORTENCP12ELEMENT_INFOPP14QC_OUT_CHANNELP15PSY_OUT_ELEMENTPP15PSY_OUT_CHANNELj17AUDIO_OBJECT_TYPEaPih @641
+    _Z29FDKsbrEnc_InitSbrCodeEnvelopeP17SBR_CODE_ENVELOPEPiill @642
+    _Z29FDKsbrEnc_extractSbrEnvelope1P15SBR_CONFIG_DATAP15SBR_HEADER_DATAP18SBR_BITSTREAM_DATAP11ENV_CHANNELP11COMMON_DATAP17SBR_ENV_TEMP_DATAP19SBR_FRAME_TEMP_DATA @643
+    _Z29FDKsbrEnc_extractSbrEnvelope2P15SBR_CONFIG_DATAP15SBR_HEADER_DATAP19T_PARAMETRIC_STEREOP18SBR_BITSTREAM_DATAP11ENV_CHANNELS8_P11COMMON_DATAP17SBR_ENV_TEMP_DATAP19SBR_FRAME_TEMP_DATAi @644
+    _Z29FDKsbrEnc_initInvFiltDetectorP16SBR_INV_FILT_ESTPiij @645
+    _Z29FreeRam_Sbr_QmfStatesAnalysisPPs @646
+    _Z29FreeRam_aacEnc_PsyInputBufferPPs @647
+    _Z29FreeRam_aacEnc_PsyOutElementsPP15PSY_OUT_ELEMENT @648
+    _Z29GetRam_TransportDecoderBufferi @649
+    _Z29GetRam_aacEnc_AdjustThresholdi @650
+    _Z29GetRam_aacEnc_MergeGainLookUpiPh @651
+    _Z29GetRam_sbr_QmfStatesSynthesisi @652
+    _Z29GetRequiredMemRam_ParamStereov @653
+    _Z29GetRequiredMemRam_bsOutbufferv @654
+    _Z29GetRequiredMemWorkBufferCore1v @655
+    _Z29GetRequiredMemWorkBufferCore2v @656
+    _Z29Hcr_State_BODY_SIGN_ESC__BODYP13FDK_BITSTREAMPv @657
+    _Z29Hcr_State_BODY_SIGN_ESC__SIGNP13FDK_BITSTREAMPv @658
+    _Z29aacDecoder_drcInitChannelDataP15CDrcChannelData @659
+    _Z29transportDec_GetNrOfSubFramesP12TRANSPORTDEC @660
+    _Z30CAacDecoder_SignalInterruptionP20AAC_DECODER_INSTANCE @661
+    _Z30CBlock_FrequencyToTimeLowDelayP28CAacDecoderStaticChannelInfoP22CAacDecoderChannelInfoPssc @662
+    _Z30CLatmDemux_ReadStreamMuxConfigP13FDK_BITSTREAMP10CLatmDemuxP13CSTpCallBacksP21CSAudioSpecificConfig @663
+    _Z30CProgramConfig_GetElementTablePK14CProgramConfigP14MP4_ELEMENT_IDi @664
+    _Z30FDKaacEnc_CheckBandEnergyOptimPKlPiPKiiPlS4_i @665
+    _Z30FDKaacEnc_DetermineEncoderModeP12CHANNEL_MODEi @666
+    _Z30FDKaacEnc_EstimateScaleFactorsPP15PSY_OUT_CHANNELPP14QC_OUT_CHANNELii @667
+    _Z30FDKaacEnc_InitPnsConfigurationP10PNS_CONFIGiiiiPKiii @668
+    _Z30FDKaacEnc_InitPsyConfigurationiiiiiiP17PSY_CONFIGURATION7FB_TYPE @669
+    _Z30FDKaacEnc_InitTnsConfigurationiiiiiiP10TNS_CONFIGP17PSY_CONFIGURATIONii @670
+    _Z30FDKaacEnc_codeScalefactorDeltaiP13FDK_BITSTREAM @671
+    _Z30FDKaacEnc_getChannelAssignment12CHANNEL_MODE13CHANNEL_ORDER @672
+    _Z30FDKsbrEnc_AssembleSbrBitstreamP11COMMON_DATAP11FDK_CRCINFOij @673
+    _Z30FDKsbrEnc_FindStartAndStopBandiiii7SR_MODEPiS0_ @674
+    _Z30FDKsbrEnc_InitSbrHuffmanTablesP12SBR_ENV_DATAP17SBR_CODE_ENVELOPES2_7AMP_RES @675
+    _Z30FDKsbrEnc_InitTonCorrParamExtriP16SBR_TON_CORR_ESTP15SBR_CONFIG_DATAiiiiij @676
+    _Z30FDKsbrEnc_resetInvFiltDetectorP16SBR_INV_FILT_ESTPii @677
+    _Z30FreeRam_TransportDecoderBufferPPh @678
+    _Z30FreeRam_aacEnc_AdjustThresholdPP13ADJ_THR_STATE @679
+    _Z30FreeRam_sbr_QmfStatesSynthesisPPl @680
+    _Z30GetAacDecoderStaticChannelInfoi @681
+    _Z30GetRam_Sbr_guideVectorDetectedi @682
+    _Z30GetRequiredMemRam_aacEnc_QCoutv @683
+    _Z30adtsRead_GetRawDataBlockLengthP11STRUCT_ADTSi @684
+    _Z30transportDec_GetBufferFullnessP12TRANSPORTDEC @685
+    _Z31CLatmDemux_GetFrameLengthInBitsP10CLatmDemux @686
+    _Z31FDK_DRC_Generator_getDrcProfileP8DRC_COMP @687
+    _Z31FDK_DRC_Generator_setDrcProfileP8DRC_COMP11DRC_PROFILES1_ @688
+    _Z31FDKaacEnc_CalculateChaosMeasurePliS_ @689
+    _Z31FDKaacEnc_CalculateFullTonalityPlPiS_PsiPKii @690
+    _Z31FDKsbrEnc_ResetTonCorrParamExtrP16SBR_TON_CORR_ESTiiPhiiPS1_Pii @691
+    _Z31FreeAacDecoderStaticChannelInfoPP28CAacDecoderStaticChannelInfo @692
+    _Z31FreeRam_Sbr_guideVectorDetectedPPh @693
+    _Z31GetRequiredMemRam_SbrDecChannelv @694
+    _Z31GetRequiredMemRam_SbrDecElementv @695
+    _Z31GetRequiredMemRam_Sbr_guideScfbv @696
+    _Z31GetRequiredMemRam_aacEnc_PsyOutv @697
+    _Z31transportDec_GetAuBitsRemainingP12TRANSPORTDECj @698
+    _Z32CLatmDemux_ReadAuChunkLengthInfoP13FDK_BITSTREAM @699
+    _Z32CLatmDemux_ReadPayloadLengthInfoP13FDK_BITSTREAMP10CLatmDemux @700
+    _Z32FDK_DRC_Generator_getCompProfileP8DRC_COMP @701
+    _Z32FDKaacEnc_FinalizeBitConsumptionP15CHANNEL_MAPPINGP8QC_STATEP6QC_OUTPP14QC_OUT_ELEMENTP12TRANSPORTENC17AUDIO_OBJECT_TYPEja @702
+    _Z32FDKaacEnc_FreqToBandWithRoundingiiiPKi @703
+    _Z32FDKsbrEnc_CreateTonCorrParamExtrP16SBR_TON_CORR_ESTi @704
+    _Z32FDKsbrEnc_DeleteTonCorrParamExtrP16SBR_TON_CORR_EST @705
+    _Z32FDKsbrEnc_InitExtractSbrEnvelopeP20SBR_EXTRACT_ENVELOPEiiiiiimiPhj @706
+    _Z32FDKsbrEnc_LSI_divide_scale_fractlll @707
+    _Z32FDKsbrEnc_initFrameInfoGeneratorP18SBR_ENVELOPE_FRAMEiiiiii @708
+    _Z32GetRam_aacEnc_AdjThrStateElementi @709
+    _Z32GetRequiredMemRam_SbrDynamic_RAMv @710
+    _Z32GetRequiredMemRam_Sbr_envYBufferv @711
+    _Z32GetRequiredMemRam_Sbr_signMatrixv @712
+    _Z32GetRequiredMemRam_Sbr_v_k_masterv @713
+    _Z32GetRequiredMemRam_aacEnc_QCstatev @714
+    _Z32transportDec_RegisterAscCallbackP12TRANSPORTDECPFiPvPK21CSAudioSpecificConfigES1_ @715
+    _Z32transportDec_RegisterSbrCallbackP12TRANSPORTDECPFiPvP13FDK_BITSTREAMiii17AUDIO_OBJECT_TYPE14MP4_ELEMENT_IDiES1_ @716
+    _Z32transportDec_RegisterSscCallbackP12TRANSPORTDECPFiPvP13FDK_BITSTREAM17AUDIO_OBJECT_TYPEiiiES1_ @717
+    _Z32transportEnc_RegisterSbrCallbackP12TRANSPORTENCPFiPvP13FDK_BITSTREAMiii17AUDIO_OBJECT_TYPE14MP4_ELEMENT_IDiES1_ @718
+    _Z33FDKaacEnc_CalcBandEnergyOptimLongPKlPiPKiiPlS4_ @719
+    _Z33FDKsbrEnc_CalculateTonalityQuotasP16SBR_TON_CORR_ESTPPlS2_ii @720
+    _Z33FreeRam_aacEnc_AdjThrStateElementPP11ATS_ELEMENT @721
+    _Z33GetRequiredMemRam_Sbr_quotaMatrixv @722
+    _Z33Hcr_State_BODY_SIGN_ESC__ESC_WORDP13FDK_BITSTREAMPv @723
+    _Z34CBlock_InverseQuantizeSpectralDataP22CAacDecoderChannelInfoP16SamplingRateInfo @724
+    _Z34CLatmDemux_GetOtherDataPresentFlagP10CLatmDemux @725
+    _Z34FDKaacEnc_CalcBandEnergyOptimShortPKlPiPKiiPl @726
+    _Z34FDKaacEnc_PreProcessPnsChannelPairiPlS_S_S_S_P10PNS_CONFIGP8PNS_DATAS3_ @727
+    _Z34FDKsbrEnc_CreateExtractSbrEnvelopeP20SBR_EXTRACT_ENVELOPEiiPh @728
+    _Z34FDKsbrEnc_InitSbrTransientDetectorP22SBR_TRANSIENT_DETECTORiiP16sbrConfigurationiiiiiii @729
+    _Z34FDKsbrEnc_deleteExtractSbrEnvelopeP20SBR_EXTRACT_ENVELOPE @730
+    _Z34FDKsbrEnc_sbrNoiseFloorEstimateQmfP24SBR_NOISE_FLOOR_ESTIMATEPK14SBR_FRAME_INFOPlPS4_PaiiiiP9INVF_MODEj @731
+    _Z34GetRequiredMemRam_TransportDecoderv @732
+    _Z34GetRequiredMemRam_TransportEncoderv @733
+    _Z34GetRequiredMemRam_aacEnc_PsyStaticv @734
+    _Z34GetRequiredMemRam_aacEnc_QCelementv @735
+    _Z35FDKaacEnc_IntensityStereoProcessingPlS_S_S_S_S_S_S_S_S_S_PiS0_iiiPKiiS0_S0_PP8PNS_DATA @736
+    _Z35FDKaacEnc_PostProcessPnsChannelPairiP10PNS_CONFIGP8PNS_DATAS2_PiS3_ @737
+    _Z35FDKaacEnc_calcSfbQuantEnergyAndDistPlPsiiS_S_ @738
+    _Z35FDKsbrEnc_InitSbrNoiseFloorEstimateP24SBR_NOISE_FLOOR_ESTIMATEiPKhiiiij @739
+    _Z35GetRam_Sbr_prevEnvelopeCompensationi @740
+    _Z35GetRequiredMemAacDecoderChannelInfov @741
+    _Z35GetRequiredMemRam_SbrDecWorkBuffer1v @742
+    _Z35GetRequiredMemRam_SbrDecWorkBuffer2v @743
+    _Z35GetRequiredMemRam_aacEnc_AacEncoderv @744
+    _Z35GetRequiredMemRam_aacEnc_PsyElementv @745
+    _Z35GetRequiredMemRam_sbr_OverlapBufferv @746
+    _Z35Hcr_State_BODY_SIGN_ESC__ESC_PREFIXP13FDK_BITSTREAMPv @747
+    _Z35getImplicitAudioChannelTypeAndIndexP18AUDIO_CHANNEL_TYPEPhjj @748
+    _Z35transportEnc_LatmAdjustSubframeBitsP11LATM_STREAMPi @749
+    _Z36FDKsbrEnc_CountSbrChannelPairElementP15SBR_HEADER_DATAP19T_PARAMETRIC_STEREOP18SBR_BITSTREAM_DATAP12SBR_ENV_DATAS6_P11COMMON_DATAj @750
+    _Z36FDKsbrEnc_WriteEnvChannelPairElementP15SBR_HEADER_DATAP19T_PARAMETRIC_STEREOP18SBR_BITSTREAM_DATAP12SBR_ENV_DATAS6_P11COMMON_DATAj @751
+    _Z36FDKsbrEnc_resetSbrNoiseFloorEstimateP24SBR_NOISE_FLOOR_ESTIMATEPKhi @752
+    _Z36FreeRam_Sbr_prevEnvelopeCompensationPPh @753
+    _Z36GetRequiredMemRam_aacEnc_ElementBitsv @754
+    _Z36GetRequiredMemRam_aacEnc_PsyInternalv @755
+    _Z37FDKaacEnc_GetChannelModeConfiguration12CHANNEL_MODE @756
+    _Z37FDKsbrEnc_deleteSbrNoiseFloorEstimateP24SBR_NOISE_FLOOR_ESTIMATE @757
+    _Z37FDKsbrEnc_qmfInverseFilteringDetectorP16SBR_INV_FILT_ESTPPlS1_PaiiiP9INVF_MODE @758
+    _Z37GetRequiredMemRam_Sbr_freqBandTableHIv @759
+    _Z37GetRequiredMemRam_Sbr_freqBandTableLOv @760
+    _Z37GetRequiredMemRam_Sbr_guideVectorDiffv @761
+    _Z37GetRequiredMemRam_Sbr_guideVectorOrigv @762
+    _Z37GetRequiredMemRam_aacEnc_BitCntrStatev @763
+    _Z38FDKsbrEnc_WriteEnvSingleChannelElementP15SBR_HEADER_DATAP19T_PARAMETRIC_STEREOP18SBR_BITSTREAM_DATAP12SBR_ENV_DATAP11COMMON_DATAj @764
+    _Z38GetRequiredMemRam_PsQmfStatesSynthesisv @765
+    _Z38GetRequiredMemRam_Sbr_detectionVectorsv @766
+    _Z38GetRequiredMemRam_aacEnc_PsyOutChannelv @767
+    _Z38transportDec_GetMissingAccessUnitCountPiP12TRANSPORTDEC @768
+    _Z39GetRequiredMemRam_Sbr_QmfStatesAnalysisv @769
+    _Z39GetRequiredMemRam_aacEnc_PsyInputBufferv @770
+    _Z39GetRequiredMemRam_aacEnc_PsyOutElementsv @771
+    _Z3fftiPlPi @772
+    _Z40FDKsbrEnc_SbrMissingHarmonicsDetectorQmfP30SBR_MISSING_HARMONICS_DETECTORPPlPPiPaPK14SBR_FRAME_INFOPKhS3_PhSA_iSB_S1_ @773
+    _Z40GetRequiredMemRam_TransportDecoderBufferv @774
+    _Z40GetRequiredMemRam_aacEnc_AdjustThresholdv @775
+    _Z40GetRequiredMemRam_sbr_QmfStatesSynthesisv @776
+    _Z41FDKsbrEnc_InitSbrMissingHarmonicsDetectorP30SBR_MISSING_HARMONICS_DETECTORiiiiiiij @777
+    _Z41GetRequiredMemAacDecoderStaticChannelInfov @778
+    _Z41GetRequiredMemRam_Sbr_guideVectorDetectedv @779
+    _Z42FDKsbrEnc_PSEnc_ParametricStereoProcessingP19T_PARAMETRIC_STEREOPPsjPP15QMF_FILTER_BANKPPlS7_S1_S4_Pai @780
+    _Z42FDKsbrEnc_ResetSbrMissingHarmonicsDetectorP30SBR_MISSING_HARMONICS_DETECTORi @781
+    _Z42transportEnc_LatmCountTotalBitDemandHeaderP11LATM_STREAMj @782
+    _Z43FDKsbrEnc_CreateSbrMissingHarmonicsDetectorP30SBR_MISSING_HARMONICS_DETECTORi @783
+    _Z43FDKsbrEnc_DeleteSbrMissingHarmonicsDetectorP30SBR_MISSING_HARMONICS_DETECTOR @784
+    _Z43GetRequiredMemRam_aacEnc_AdjThrStateElementv @785
+    _Z46GetRequiredMemRam_Sbr_prevEnvelopeCompensationv @786
+    _Z49BidirectionalEstimation_UseLowerScfOfCurrentFrameP22CAacDecoderChannelInfo @787
+    _Z4fPowliliPi @788
+    _Z4ifftiPlPi @789
+    _Z52BidirectionalEstimation_UseScfOfPrevFrameAsReferenceP22CAacDecoderChannelInfoP28CAacDecoderStaticChannelInfo @790
+    _Z5f2Powli @791
+    _Z5f2PowliPi @792
+    _Z5fLog2li @793
+    _Z5fLog2liPi @794
+    _Z6dct_IIPlS_iPi @795
+    _Z6dct_IVPliPi @796
+    _Z6dst_IVPliPi @797
+    _Z6fLdPowlili @798
+    _Z6fLdPowliliPi @799
+    _Z6fft_32Pl @800
+    _Z7HcrInitP10CErHcrInfoP22CAacDecoderChannelInfoPK16SamplingRateInfoP13FDK_BITSTREAM @801
+    _Z7IcsReadP13FDK_BITSTREAMP8CIcsInfoPK16SamplingRateInfoj @802
+    _Z7dct_IIIPlS_iPi @803
+    _Z7dit_fftPliPK8FIXP_SPKi @804
+    _Z7fPowIntliiPi @805
+    _Z7sbr_decP7SBR_DECPsS1_S0_S1_iiP15SBR_HEADER_DATAP14SBR_FRAME_DATAP19SBR_PREV_FRAME_DATAiP6PS_DECj @806
+    _Z8CalcLog2liPi @807
+    _Z8DecodePsP6PS_DECh @808
+    _Z8dit_ifftPliPK8FIXP_SPKi @809
+    _Z8fDivNormll @810
+    _Z8fDivNormllPi @811
+    _Z8fixp_cosli @812
+    _Z8fixp_sinli @813
+    _Z8sqrtFixpl @814
+    _Z9CHcr_ReadP13FDK_BITSTREAMP22CAacDecoderChannelInfo @815
+    _Z9CPns_ReadP8CPnsDataP13FDK_BITSTREAMPK19CodeBookDescriptionPshii @816
+    _Z9CTns_ReadP13FDK_BITSTREAMP8CTnsDataPK8CIcsInfoj @817
+    _Z9CalcLdInti @818
+    _Z9InitLdIntv @819
+    _Z9fMultNormllPi @820
+    _Z9fixp_atanl @821
+    _Z9mdct_initP6mdct_tPli @822
+    _Z9schur_divlli @823
+    _Z9shellsortPhh @824
+    aAllpassLinkDecaySer @825 DATA
+    aAllpassLinkDelaySer @826 DATA
+    aBookPsIccFreqDecode @827 DATA
+    aBookPsIccTimeDecode @828 DATA
+    aBookPsIidFineFreqDecode @829 DATA
+    aBookPsIidFineTimeDecode @830 DATA
+    aBookPsIidFreqDecode @831 DATA
+    aBookPsIidTimeDecode @832 DATA
+    aCbPriority @833 DATA
+    aCodebook2StartInt @834 DATA
+    aDimCb @835 DATA
+    aDimCbShift @836 DATA
+    aHuffTable @837 DATA
+    aHuffTreeRvlCodewds @838 DATA
+    aHuffTreeRvlcEscape @839 DATA
+    aLargestAbsoluteValue @840 DATA
+    aMaxCwLen @841 DATA
+    aMaxOfCbPair @842 DATA
+    aMinOfCbPair @843 DATA
+    aQuantTable @844 DATA
+    aSignCb @845 DATA
+    aStateConstant2State @846 DATA
+    aaFractDelayPhaseFactorImQmf @847 DATA
+    aaFractDelayPhaseFactorImSubQmf20 @848 DATA
+    aaFractDelayPhaseFactorReQmf @849 DATA
+    aaFractDelayPhaseFactorReSubQmf20 @850 DATA
+    aaFractDelayPhaseFactorSerImQmf @851 DATA
+    aaFractDelayPhaseFactorSerImSubQmf20 @852 DATA
+    aaFractDelayPhaseFactorSerReQmf @853 DATA
+    aaFractDelayPhaseFactorSerReSubQmf20 @854 DATA
+    aacDecoder_AncDataGet @855
+    aacDecoder_AncDataInit @856
+    aacDecoder_Close @857
+    aacDecoder_ConfigRaw @858
+    aacDecoder_DecodeFrame @859
+    aacDecoder_Fill @860
+    aacDecoder_GetFreeBytes @861
+    aacDecoder_GetLibInfo @862
+    aacDecoder_GetStreamInfo @863
+    aacDecoder_Open @864
+    aacDecoder_SetParam @865
+    aacEncClose @866
+    aacEncEncode @867
+    aacEncGetLibInfo @868
+    aacEncInfo @869
+    aacEncOpen @870
+    aacEncoder_GetParam @871
+    aacEncoder_SetParam @872
+    bins2groupMap20 @873 DATA
+    bookSbrEnvBalanceC10F @874 DATA
+    bookSbrEnvBalanceC10T @875 DATA
+    bookSbrEnvBalanceC11F @876 DATA
+    bookSbrEnvBalanceC11T @877 DATA
+    bookSbrEnvBalanceL10F @878 DATA
+    bookSbrEnvBalanceL10T @879 DATA
+    bookSbrEnvBalanceL11F @880 DATA
+    bookSbrEnvBalanceL11T @881 DATA
+    bookSbrNoiseBalanceC11T @882 DATA
+    bookSbrNoiseBalanceL11T @883 DATA
+    channelMappingTablePassthrough @884 DATA
+    channelMappingTableWAV @885 DATA
+    charBuf2HexString @886
+    decayScaleFactTable @887 DATA
+    delayIndexQmf @888 DATA
+    elementsTab @889 DATA
+    groupBorders20 @890 DATA
+    groupBorders34 @891 DATA
+    harmonicPhaseX @892 DATA
+    hexChar2Dec @893
+    hexString2CharBuf @894
+    invCount @895 DATA
+    p2_13_20 @896 DATA
+    p8_13_20 @897 DATA
+    p_FDKaacEnc_11025_long_1024 @898 DATA
+    p_FDKaacEnc_11025_short_128 @899 DATA
+    p_FDKaacEnc_12000_long_1024 @900 DATA
+    p_FDKaacEnc_12000_short_128 @901 DATA
+    p_FDKaacEnc_16000_long_1024 @902 DATA
+    p_FDKaacEnc_16000_short_128 @903 DATA
+    p_FDKaacEnc_22050_long_1024 @904 DATA
+    p_FDKaacEnc_22050_short_128 @905 DATA
+    p_FDKaacEnc_24000_long_1024 @906 DATA
+    p_FDKaacEnc_24000_short_128 @907 DATA
+    p_FDKaacEnc_32000_long_1024 @908 DATA
+    p_FDKaacEnc_32000_short_128 @909 DATA
+    p_FDKaacEnc_44100_long_1024 @910 DATA
+    p_FDKaacEnc_44100_short_128 @911 DATA
+    p_FDKaacEnc_48000_long_1024 @912 DATA
+    p_FDKaacEnc_48000_short_128 @913 DATA
+    p_FDKaacEnc_64000_long_1024 @914 DATA
+    p_FDKaacEnc_64000_short_128 @915 DATA
+    p_FDKaacEnc_8000_long_1024 @916 DATA
+    p_FDKaacEnc_8000_short_128 @917 DATA
+    p_FDKaacEnc_88200_long_1024 @918 DATA
+    p_FDKaacEnc_88200_short_128 @919 DATA
+    p_FDKaacEnc_96000_long_1024 @920 DATA
+    p_FDKaacEnc_96000_short_128 @921 DATA
+    pcmDmx_ApplyFrame @922
+    pcmDmx_Close @923
+    pcmDmx_GetLibInfo @924
+    pcmDmx_Open @925
+    pcmDmx_ReadDvbAncData @926
+    pcmDmx_Reset @927
+    pcmDmx_SetMatrixMixdownFromPce @928
+    pcmDmx_SetParam @929
+    psTuningTable @930 DATA
+    qmf_64 @931 DATA
+    qmf_cldfb_320 @932 DATA
+    qmf_cldfb_640 @933 DATA
+    qmf_phaseshift_cos32 @934 DATA
+    qmf_phaseshift_cos32_cldfb @935 DATA
+    qmf_phaseshift_cos64 @936 DATA
+    qmf_phaseshift_cos64_cldfb @937 DATA
+    qmf_phaseshift_sin32 @938 DATA
+    qmf_phaseshift_sin32_cldfb @939 DATA
+    qmf_phaseshift_sin64 @940 DATA
+    qmf_phaseshift_sin64_cldfb @941 DATA
+    quantizedIIDs @942 DATA
+    quantizedIIDsFine @943 DATA
+    randomSign @944 DATA
+    sbrDecoder_Apply @945
+    sbrDecoder_Close @946
+    sbrDecoder_GetLibInfo @947
+    sbrDecoder_Header @948
+    sbrDecoder_InitElement @949
+    sbrDecoder_Open @950
+    sbrDecoder_Parse @951
+    sbrDecoder_SetParam @952
+    sbrDecoder_drcDisable @953
+    sbrDecoder_drcFeedChannel @954
+    sbrEncoder_Close @955
+    sbrEncoder_EncodeFrame @956
+    sbrEncoder_GetEstimateBitrate @957
+    sbrEncoder_GetHeader @958
+    sbrEncoder_GetInBufferSize @959
+    sbrEncoder_GetInputDataDelay @960
+    sbrEncoder_GetLibInfo @961
+    sbrEncoder_Init @962
+    sbrEncoder_LimitBitRate @963
+    sbrEncoder_Open @964
+    sbrEncoder_UpdateBuffers @965
+    sbrTuningTable @966 DATA
+    sfbOffsetTables @967 DATA
+    sin_twiddle_L64 @968 DATA
+    sqrt_tab @969 DATA
+    tns_max_bands_tbl @970 DATA
+    tns_max_bands_tbl_480 @971 DATA
+    tns_max_bands_tbl_512 @972 DATA
+    v_Huff_NoiseLevelC11T @973 DATA
+    v_Huff_NoiseLevelL11T @974 DATA
+    v_Huff_envelopeLevelC10F @975 DATA
+    v_Huff_envelopeLevelC10T @976 DATA
+    v_Huff_envelopeLevelC11F @977 DATA
+    v_Huff_envelopeLevelC11T @978 DATA
+    v_Huff_envelopeLevelL10F @979 DATA
+    v_Huff_envelopeLevelL10T @980 DATA
+    v_Huff_envelopeLevelL11F @981 DATA
+    v_Huff_envelopeLevelL11T @982 DATA
+    windowSlopes @983 DATA

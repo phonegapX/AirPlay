@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fairplay", "fairplay.vcxproj", "{80BFF2ED-8F57-41CE-8E89-F1194B227CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80BFF2ED-8F57-41CE-8E89-F1194B227CAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80BFF2ED-8F57-41CE-8E89-F1194B227CAB}.Debug|Win32.Build.0 = Debug|Win32
+		{80BFF2ED-8F57-41CE-8E89-F1194B227CAB}.Release|Win32.ActiveCfg = Release|Win32
+		{80BFF2ED-8F57-41CE-8E89-F1194B227CAB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
